@@ -3,138 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paxton Munthali</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
- 
-    <style>
-        *{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color: #eaf0f1;
-        }
-        body,html{
-            height: 100%;
-            margin: 0;
-            background-color: #080622;            
-            max-height: 100vh;
-        }
-        .navbar-brand{
-            text-decoration: none;
-            color: #0bcee7;
-            font-size: 30px;
-            font-weight: bolder;
-        }
-        .navbar-brand:hover{
-            color:darkgrey;
-        }
-       
-        .nav-link {
-        position: relative;
-        text-decoration: none;
-        color: #eaf0f1;
-        }
-        
-        .nav-link:hover{
-            color: #eaf0f1;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #0bcee7;
-            transition: width 0.5s ease-in-out;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-            
-        }
-        .main{
-            width: 100%;
-            background-image: url("images/7.jpg");
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .header-text{
-            margin-top: 15%;            
-        }
-
-        .header-text p{
-            font-size: 30px;
-        }
-      
-        /* Extra small devices (phones, less than 600px) */
-        @media (max-width: 600px) {             
-            .navbar-toggler-icon {
-                background-color: #ffffff; 
-                width: 30px;  /* Adjust width if necessary */
-                height: 30px; /* Adjust height if necessary */
-                border-radius: 5px; /* Optional: round the corners of the icon */
-                
-            }
-            .nav-link{
-                width: 70px;
-            }
-            .header-text p{
-                font-size: 1.5em;
-            }
-            .header-text h1{
-                font-size: 2.1em;
-                font-weight:bold;
-                width: 100px;            
-            }
-            
-         }
-
-        /* Small devices (portrait tablets and large phones, 600px to 768px) */
-        @media (min-width: 600px) and (max-width: 768px) { 
-            .header-text p{
-                font-size: 1.5em;
-            }
-            .header-text h1{
-            font-size: 2.5em;
-            font-weight:bold;   
-            width: 300px;            
-            }
-         }
-
-        /* Medium devices (landscape tablets, 768px to 992px) */
-        @media (min-width: 768px) and (max-width: 992px) { 
-            .header-text h1{
-            font-size: 3.0em;
-            font-weight:bold; 
-            width: 380px;           
-            }
-         }
-
-        /* Large devices (laptops/desktops, 992px to 1200px) */
-        @media (min-width: 992px) and (max-width: 1200px) { 
-            .header-text h1{
-            font-size: 3.0em;
-            font-weight:bold;            
-            }
-         }
-
-        /* Extra large devices (large desktops, greater than 1200px) */
-        @media (min-width: 1200px) {
-            .header-text h1{
-            font-size: 3.0em;
-            font-weight:bold;            
-            }
-         }
-               
-        .header-text h1 span{
-            color: #24dcf5;
-        }
-        
-    </style>
+    <title>Paxton Munthali</title> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/259db8c857.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <div class="main container-fluid">       
@@ -146,10 +19,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">             
             <ul  class="navbar-nav ms-auto me-4 text-secondary">
                 <li class="nav-item"><a class="nav-link"  href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portifolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>   
             </div>  
         </nav>
@@ -159,10 +32,171 @@
         </div>   
 
     </div>
+    <!-- -----------------ABOUT----------- -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="left col-md-5">
+                   <img src="images/3.jpg" height="600px" width="400px" alt="">
+                </div>
+                <div class="right col-md-7">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A computer Engineer, with Software development, implementaion and Support specialization. With a Possession 5+ years of experience,
+                        and I aim at Development of  user friendly, eye-catching and realiable software solutions for real world problems using modern technologies. 
+                    </p>
+                    <nav>
+                        <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-skills-tab" data-bs-toggle="tab" data-bs-target="#nav-skills" type="button" role="tab" aria-controls="nav-skills" aria-selected="true">Skills</button>
+                          <button class="nav-link" id="nav-experience-tab" data-bs-toggle="tab" data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience" aria-selected="false">Experience</button>
+                          <button class="nav-link" id="nav-education-tab" data-bs-toggle="tab" data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education" aria-selected="false">Education</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
+                            <ul>
+                                <li><span>Web App Development</span><br>PHP, JavaScript, Laravel, bootstrap, HTML/CSS</li>
+                                <li><span>Desktop App Development</span><br>C#, Python</li>
+                                <li><span>Machine Learning</span><br>Python, OpenCV, AWS</li>
+                                <li><span>Android App Development</span><br>Java</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab">
+                            <ul>
+                                <li><span>Software Support and Implementation Consultant(2021 - Present)</span><br>Enterprise Accounting Software, HR and Payroll system, and Point of Sale Systems Implementation and Support.</li>
+                                <li><span>Freelance Software Developer (2019 - present)</span><br>Developed POS System, Sign language Recognition System, Sacco Management System and Online Food Ordering System.</li>
+                                <li><span>Technical Assistant (2019 - 2021)</span><br>Computer Networking, Fiber Cable Splicing, Point to Point Antennae, Router and Switch Configuration and Installation.</li>
+                                <li><span>Network Engineer Intern(2017)</span><br>Antennae and router configuration and Installation</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+                            <ul>
+                                <li><span>Master of Computer Applications</span><br>Distinction</li>
+                                <li><span>Bachelor of Computer Engineering</span><br>Credit</li>
+                                <li><span>Malawi School Certificate of Education</span><br>16 Points</li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- -----------------Services----------- -->
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="row services-list">
+                <div >
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web App Development</h3>
+                    <p>Applications that use the web browser and can be hosted on servers and accessed through internet or intranet</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-solid fa-desktop"></i>
+                    <h3>Desktop App Development</h3>
+                    <p>Applications that run on Operating sytems like Windows or Linux Platforms</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>These are apps like android apps with .apk extensions for mobiles phones</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------prtifolio----------- -->
+    <div class="portifolio" id="portifolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="row work-list">
+                <div class="work">
+                    <img src="images/a.jpg" >
+                    <div class="layer">
+                        <h3>SL Translation App</h3>
+                        <p>This app translates sign language to speech and vice versa</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/b.jpg" >
+                    <div class="layer">
+                        <h3>USB Transfers App</h3>
+                        <p>This app tracks all files that have been transfered from a computer to a USB drive</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/c.jpg" >
+                    <div class="layer">
+                        <h3>Sacco Management System</h3>
+                        <p>This is a Web based system used for member, Shares, Savingas and Loan Management </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>  
+                <div class="work hidden">
+                    <img src="images/a.jpg" >
+                    <div class="layer">
+                        <h3>Face Recognition Student Attendance System</h3>
+                        <p>This app uses Face Recognition to get attendance of registered users </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="images/b.jpg" >
+                    <div class="layer">
+                        <h3>Online Food Ordering System</h3>
+                        <p>System allows users to order food online, using various payment methods</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="images/c.jpg" >
+                    <div class="layer">
+                        <h3>Church Website</h3>
+                        <p>Website with sermons and church programs </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>              
+            </div>
+            <Button id="showMoreBtn" class="btn">See More</Button>
+        </div>
+    </div>
+    <!-- -----------------Contact----------- -->
+     <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>paxmunthalijnr@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+265882856681</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://mw.linkedin.com/in/paxton-munthali-0bb282214"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="resources/PAXTON MUNTHALI CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Paxton. Made with <i class="fa-solid fa-heart"></i> by Paxton Munthali </p>
+        </div>
+     </div>
     <footer class="footer">
 
     </footer>
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
   
 </body>
 <script>
@@ -201,4 +235,43 @@ document.addEventListener("DOMContentLoaded", () => {
    
 });
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwo6bV-xiddl2vmRaOJDtXnATFcpFaAS86YtQWO3MivhMgWFG67kx4FKUs-vUqTmENwgg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    document.getElementById("showMoreBtn").addEventListener("click", function() {
+    let hiddenProjects = document.querySelectorAll(".hidden");
+    let isHidden = hiddenProjects[0].style.display === "none" || hiddenProjects[0].style.display === "";
+
+    hiddenProjects.forEach(project => {
+    if (isHidden) {
+        project.style.display = "block";
+        setTimeout(() => project.style.opacity = "1", 50);
+    } else {
+        project.style.opacity = "0";
+        setTimeout(() => project.style.display = "none", 500);
+    }
+});
+
+
+    // Toggle button text
+    this.textContent = isHidden ? "Show Less" : "Show More";
+});
+
+  </script>
 </html>
